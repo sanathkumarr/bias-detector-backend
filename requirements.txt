@@ -12,7 +12,6 @@ lxml
 spacy
 textblob
 nltk
-difflib
 pydantic
 httpx
 scikit-learn

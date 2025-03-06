@@ -1,0 +1,7 @@
+[
+    "https://news.google.com/search?q={query}",
+    "https://www.reuters.com/search/news?blob={query}",
+    "https://www.bbc.co.uk/search?q={query}",
+    "https://www.aljazeera.com/search/{query}",
+    "https://www.npr.org/search?query={query}"
+]

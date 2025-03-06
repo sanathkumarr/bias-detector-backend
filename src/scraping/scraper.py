@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 
 # Load predefined sources
-with open("C:/Users/rsana/chrome-extension/backend/src/scraping/sources.json", "r") as f:
+with open("backend/src/scraping/sources.json", "r") as f:
     SOURCES = json.load(f)
 
 async def fetch_article(session, url):

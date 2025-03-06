@@ -4,8 +4,13 @@ import json
 from bs4 import BeautifulSoup
 
 # Load predefined sources
-with open("backend/src/scraping/sources.json", "r") as f:
-    SOURCES = json.load(f)
+SOURCES = [
+    "https://news.google.com/search?q={query}",
+    "https://www.reuters.com/search/news?blob={query}",
+    "https://www.bbc.co.uk/search?q={query}",
+    "https://www.aljazeera.com/search/{query}",
+    "https://www.npr.org/search?query={query}"
+]
 
 async def fetch_article(session, url):
     """Fetches and extracts the main text of an article."""
